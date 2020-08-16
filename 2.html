@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="2.js"></script>
+</head>
+
+<body>
+    <form action="3.html" onforminput="validate()">
+        <label for="Username">User Name</label>
+        <input id="user" type="text" placeholder="username" required />
+        </br>
+        <label for="Email" style="margin-right: 33px;">Email</label>
+        <input id="email" type="text" pattern="[a-z0-9.+_]+@[a-z].[a-z]{3,}" placeholder="abc@gmail.com" required>
+        </br>
+        <label for="Password" style="margin-right: 10px;">Password </label>
+        <input id="password" type="password" placeholder="password" value="password" pattern="{8,}" required>
+        </br>
+        <button onsubmit="clearform()">submit</button>
+
+
+    </form>
+
+
+</body>
+
+</html>
