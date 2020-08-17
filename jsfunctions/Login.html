@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="login.js">
+
+    </script>
+</head>
+
+<body>
+    <div style="border: 2px solid black;
+         display: flex;justify-content: center;align-items: center;
+         height: 100vh;">
+        <div>
+            <h1>
+                LOGIN FORM
+            </h1>
+            <form accept="demo.html" method="POST" style="border: solid black;background-color: royalblue;">
+                <label id="uname" for="Name">USER NAME</label>
+                <input type="text" name="uname"><br>
+                <label id="pwd" for="Password" style="margin-right: 4px;">PASSWORD </label>
+                <input type="password" id="password" name="password" style="margin: 2px"><br>
+                <button onclick="validateform()">LOGIN</button><br>
+                <input type="radio" id="radio" name="remember">Remember me</input><br>
+                <input type="radio" id="radio" name="signin">Keep me signed in</input>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
