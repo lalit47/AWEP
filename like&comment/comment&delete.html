@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="comment&delete.js"></script>
+</head>
+
+<body>
+    <div>
+        <button onclick="likepost(this)">Like<span>0</span></button>
+        <input type="text" placeholder="comment here" id="user-comment"></input>
+        <button onclick="readvalue()">comment</button>
+    </div>
+
+    <div id="commentsec">
+        <div id="commentbox">
+            <!----------user comment-------------------------------->
+        </div>
+        <div id="ref" style="display: flex ;justify-content: space-between;visibility: hidden;">
+            <div>
+                sample comment
+            </div>
+            <button onclick="deletecomment(this)">delete</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
