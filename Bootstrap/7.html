@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>web_design</title>
+    <script src="7.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid bg-secondary">
+        <div class="row bg-secondary sticky-top align-items-center text-light "
+            style="height:65px; border-bottom: 1px solid #000; !important;">
+            <div class="col-1">Home</div>
+            <div class="col-2">About us</div>
+            <div class="col-7"></div>
+            <div class="col-1">Sign Up</div>
+            <div class="col-1">Log Out</div>
+        </div>
+
+        <div class="row m-1 ">
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/612/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-6">
+                <!--<div class="row m-1 justify-content-center" style="height:300px; ">-->
+                <img src="https://picsum.photos/612/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/612/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <button class="col-1 p-0 rounded" onclick="likepost(this)">Like<span>0</span></button>
+            <button class="col-1 p-0 rounded " onclick="dislikepost(this)">Dislike<span>0</span></button>
+            <input class="col-3 bg-dark rounded" type="text" placeholder="comment here...." id="user-comment"
+                style="color:white"></input>
+            <button class=" col-2 rounded" onclick="readvalue()">Comment</button>
+            <div class="col-2"></div>
+        </div>
+
+        <div id="commentsec">
+            <div id="commentbox">
+                <!----------user comment-------------------------------->
+            </div>
+            <div id="ref" style="visibility:hidden; display: flex ;justify-content: space-between;">
+                <div style="border:2px solid white;color:white;">
+                    sample comment
+                </div>
+                <button onclick="deletecomment(this)">delete</button>
+            </div>
+        </div>
+
+
+        <div class="row m-1 ">
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/611/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-6">
+                <!--<div class="row m-1 justify-content-center" style="height:300px; ">-->
+                <img src="https://picsum.photos/611/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/611/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <button class="col-1 p-0 rounded" onclick="likepost(this)">Like<span>0</span></button>
+            <button class="col-1 p-0 rounded " onclick="dislikepost(this)">Dislike<span>0</span></button>
+            <input class="col-3 bg-dark rounded" type="text" placeholder="comment here...." id="user-comment"
+                style="color:white"></input>
+            <button class=" col-2 rounded" onclick="readvalue()">Comment</button>
+            <div class="col-2"></div>
+        </div>
+        <div id="commentsec">
+            <div id="commentbox">
+                <!----------user comment-------------------------------->
+            </div>
+            <div id="ref" style="visibility:hidden; display: flex ;justify-content: space-between;">
+                <div style="border:2px solid white;color:white;">
+                    sample comment
+                </div>
+                <button onclick="deletecomment(this)">delete</button>
+            </div>
+        </div>
+        <div class="row m-1 ">
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/610/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-6">
+                <!--<div class="row m-1 justify-content-center" style="height:300px; ">-->
+                <img src="https://picsum.photos/610/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/610/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <button class="col-1 p-0 rounded" onclick="likepost(this)">Like<span>0</span></button>
+            <button class="col-1 p-0 rounded " onclick="dislikepost(this)">Dislike<span>0</span></button>
+            <input class="col-3 bg-dark rounded" type="text" placeholder="comment here...." id="user-comment"
+                style="color:white"></input>
+            <button class=" col-2 rounded" onclick="readvalue()">Comment</button>
+            <div class="col-2"></div>
+        </div>
+        <div id="commentsec">
+            <div id="commentbox">
+                <!----------user comment-------------------------------->
+            </div>
+            <div id="ref" style="visibility:hidden; display: flex ;justify-content: space-between;">
+                <div style="border:2px solid white;color:white;">
+                    sample comment
+                </div>
+                <button onclick="deletecomment(this)">delete</button>
+            </div>
+        </div>
+
+        <div class="row m-1 ">
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/609/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-6">
+                <!--<div class="row m-1 justify-content-center" style="height:300px; ">-->
+                <img src="https://picsum.photos/609/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/609/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <button class="col-1 p-0 rounded" onclick="likepost(this)">Like<span>0</span></button>
+            <button class="col-1 p-0 rounded " onclick="dislikepost(this)">Dislike<span>0</span></button>
+            <input class="col-3 bg-dark rounded" type="text" placeholder="comment here...." id="user-comment"
+                style="color:white"></input>
+            <button class=" col-2 rounded" onclick="readvalue()">Comment</button>
+            <div class="col-2"></div>
+        </div>
+        <div id="commentsec">
+            <div id="commentbox">
+                <!----------user comment-------------------------------->
+            </div>
+            <div id="ref" style="visibility:hidden; display: flex ;justify-content: space-between;">
+                <div style="border:2px solid white;color:white;">
+                    sample comment
+                </div>
+                <button onclick="deletecomment(this)">delete</button>
+            </div>
+        </div>
+
+        <div class="row m-1 ">
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/608/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-6">
+                <!--<div class="row m-1 justify-content-center" style="height:300px; ">-->
+                <img src="https://picsum.photos/608/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/608/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <button class="col-1 p-0 rounded" onclick="likepost(this)">Like<span>0</span></button>
+            <button class="col-1 p-0 rounded " onclick="dislikepost(this)">Dislike<span>0</span></button>
+            <input class="col-3 bg-dark rounded" type="text" placeholder="comment here...." id="user-comment"
+                style="color:white"></input>
+            <button class=" col-2 rounded" onclick="readvalue()">Comment</button>
+            <div class="col-2"></div>
+        </div>
+        <div id="commentsec">
+            <div id="commentbox">
+                <!----------user comment-------------------------------->
+            </div>
+            <div id="ref" style="visibility:hidden; display: flex ;justify-content: space-between;">
+                <div style="border:2px solid white;color:white;">
+                    sample comment
+                </div>
+                <button onclick="deletecomment(this)">delete</button>
+            </div>
+        </div>
+
+        <div class="row m-1 ">
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/607/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-6">
+                <!--<div class="row m-1 justify-content-center" style="height:300px; ">-->
+                <img src="https://picsum.photos/607/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/607/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <button class="col-1 p-0 rounded" onclick="likepost(this)">Like<span>0</span></button>
+            <button class="col-1 p-0 rounded " onclick="dislikepost(this)">Dislike<span>0</span></button>
+            <input class="col-3 bg-dark rounded" type="text" placeholder="comment here...." id="user-comment"
+                style="color:white"></input>
+            <button class=" col-2 rounded" onclick="readvalue()">Comment</button>
+            <div class="col-2"></div>
+        </div>
+
+        <div id="commentsec">
+            <div id="commentbox">
+                <!----------user comment-------------------------------->
+            </div>
+            <div id="ref" style="visibility:hidden; display: flex ;justify-content: space-between;">
+                <div style="border:2px solid white;color:white;">
+                    sample comment
+                </div>
+                <button onclick="deletecomment(this)">delete</button>
+            </div>
+        </div>
+
+        <div class="row m-1 ">
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/606/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-6">
+                <!--<div class="row m-1 justify-content-center" style="height:300px; ">-->
+                <img src="https://picsum.photos/606/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/606/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <button class="col-1 p-0 rounded" onclick="likepost(this)">Like<span>0</span></button>
+            <button class="col-1 p-0 rounded " onclick="dislikepost(this)">Dislike<span>0</span></button>
+            <input class="col-3 bg-dark rounded" type="text" placeholder="comment here...." id="user-comment"
+                style="color:white"></input>
+            <button class=" col-2 rounded" onclick="readvalue()">Comment</button>
+            <div class="col-2"></div>
+        </div>
+
+        <div id="commentsec">
+            <div id="commentbox">
+                <!----------user comment-------------------------------->
+            </div>
+            <div id="ref" style="visibility:hidden; display: flex ;justify-content: space-between;">
+                <div style="border:2px solid white;color:white;">
+                    sample comment
+                </div>
+                <button onclick="deletecomment(this)">delete</button>
+            </div>
+        </div>
+
+        <div class="row m-1 ">
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/605/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-6">
+                <!--<div class="row m-1 justify-content-center" style="height:300px; ">-->
+                <img src="https://picsum.photos/605/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/605/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <button class="col-1 p-0 rounded" onclick="likepost(this)">Like<span>0</span></button>
+            <button class="col-1 p-0 rounded " onclick="dislikepost(this)">Dislike<span>0</span></button>
+            <input class="col-3 bg-dark rounded" type="text" placeholder="comment here...." id="user-comment"
+                style="color:white"></input>
+            <button class=" col-2 rounded" onclick="readvalue()">Comment</button>
+            <div class="col-2"></div>
+        </div>
+        <div id="commentsec">
+            <div id="commentbox">
+                <!----------user comment-------------------------------->
+            </div>
+            <div id="ref" style="visibility:hidden; display: flex ;justify-content: space-between;">
+                <div style="border:2px solid white;color:white;">
+                    sample comment
+                </div>
+                <button onclick="deletecomment(this)">delete</button>
+            </div>
+        </div>
+
+        <div class="row m-1 ">
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/604/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-6">
+                <!--<div class="row m-1 justify-content-center" style="height:300px; ">-->
+                <img src="https://picsum.photos/604/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/604/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <button class="col-1 p-0 rounded" onclick="likepost(this)">Like<span>0</span></button>
+            <button class="col-1 p-0 rounded " onclick="dislikepost(this)">Dislike<span>0</span></button>
+            <input class="col-3 bg-dark rounded" type="text" placeholder="comment here...." id="user-comment"
+                style="color:white"></input>
+            <button class=" col-2 rounded" onclick="readvalue()">Comment</button>
+            <div class="col-2"></div>
+        </div>
+        <div id="commentsec">
+            <div id="commentbox">
+                <!----------user comment-------------------------------->
+            </div>
+            <div id="ref" style="visibility:hidden; display: flex ;justify-content: space-between;">
+                <div style="border:2px solid white;color:white;">
+                    sample comment
+                </div>
+                <button onclick="deletecomment(this)">delete</button>
+            </div>
+        </div>
+
+        <div class="row m-1 ">
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/603/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-6">
+                <!--<div class="row m-1 justify-content-center" style="height:300px; ">-->
+                <img src="https://picsum.photos/603/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/603/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <button class="col-1 p-0 rounded" onclick="likepost(this)">Like<span>0</span></button>
+            <button class="col-1 p-0 rounded " onclick="dislikepost(this)">Dislike<span>0</span></button>
+            <input class="col-3 bg-dark rounded" type="text" placeholder="comment here...." id="user-comment"
+                style="color:white"></input>
+            <button class=" col-2 rounded" onclick="readvalue()">Comment</button>
+            <div class="col-2"></div>
+        </div>
+
+        <div id="commentsec">
+            <div id="commentbox">
+                <!----------user comment-------------------------------->
+            </div>
+            <div id="ref" style="visibility:hidden; display: flex ;justify-content: space-between;">
+                <div style="border:2px solid white;color:white;">
+                    sample comment
+                </div>
+                <button onclick="deletecomment(this)">delete</button>
+            </div>
+        </div>
+        <div class="row m-1 ">
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/602/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-6">
+                <!--<div class="row m-1 justify-content-center" style="height:300px; ">-->
+                <img src="https://picsum.photos/602/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+            <div class="col-3 " style="height: 320px;">
+                <img src="https://picsum.photos/602/300" alt="" class="rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;border:2px solid black" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <button class="col-1 p-0 rounded" onclick="likepost(this)">Like<span>0</span></button>
+            <button class="col-1 p-0 rounded " onclick="dislikepost(this)">Dislike<span>0</span></button>
+            <input class="col-3 bg-dark rounded" type="text" placeholder="comment here...." id="user-comment"
+                style="color:white"></input>
+            <button class=" col-2 rounded" onclick="readvalue()">Comment</button>
+            <div class="col-2"></div>
+        </div>
+
+        <div id="commentsec">
+            <div id="commentbox">
+                <!----------user comment-------------------------------->
+            </div>
+            <div id="ref" style="visibility:hidden; display: flex ;justify-content: space-between;">
+                <div style="border:2px solid white;color:white;">
+                    sample comment
+                </div>
+                <button onclick="deletecomment(this)">delete</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
